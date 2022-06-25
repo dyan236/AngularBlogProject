@@ -1,0 +1,15 @@
+@import '../../scss/config';
+
+footer{
+    font-size: .75rem;
+    position: fixed;
+    bottom: .5rem;
+    width: 100vw;
+    text-align: center;
+    color: gray;
+    &.fold{
+        text-align: right;
+        width: auto;
+        right: .5rem;
+    }
+}

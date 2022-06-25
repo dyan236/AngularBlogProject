@@ -1,0 +1,49 @@
+@include media-desktop{
+    .menu-btn{
+        visibility: hidden;
+    }
+    .nav{
+        visibility: visible;
+        width: 100vw;
+        border-bottom: 1px solid rgba(darkslategray, 0.5);
+        .menu-nav{
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: linear-gradient(
+                to top,
+                rgba($primary-color, .7),
+                rgba($primary-color, .4)
+            ), rgba($color: $tertiary-color, $alpha: 0.25);
+            text-align: center;
+            border-left: none;
+            &_item{
+                display: inline;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+    .posts{
+        &_header{
+            padding-top: 5rem;
+            text-align: center;
+        }
+    }
+    .post{
+        width: 42rem;
+        &_image{
+            max-width: 50%;
+        }
+    }
+    .about{
+        &_header{
+            height: 25vh;
+        }
+    }
+    .counter{
+        &_header{
+            height: 25vh;
+        }
+    }
+}

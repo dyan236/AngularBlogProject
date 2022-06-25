@@ -1,0 +1,42 @@
+@import '../../scss/config';
+
+.menu-nav{
+    &_item{
+        transform: translateX(100vw);
+        @include transition-ease;
+
+        &.open{
+            transform: translateX(0);
+        }
+        &.active > a{
+            color: $secondary-color;
+        }
+    }
+    &_link{
+        display: inline-block;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 2rem 0;
+        font-weight: 300;
+        @include transition-ease;
+
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+}
+
+@for $i from 1 through 5{
+    .menu-nav_item:nth-child(#{$i}){
+        transition-delay: ($i*0.1s)+.15s;
+    }
+}
+
+@include media-desktop{
+    .menu-nav{
+        &_link{
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+        }
+    }
+}

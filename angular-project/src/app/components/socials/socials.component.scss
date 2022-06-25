@@ -1,0 +1,22 @@
+@import '../../scss/config';
+
+.socials{
+    position: fixed;
+    bottom: 1.5rem;
+    width: 100vw;
+    a{
+        padding: .25rem;
+        @include transition-ease;
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+    &.fold{
+        display: flex;
+        flex-direction: column;
+        left: .5rem;
+        bottom: .5rem;
+        width: auto;
+        @include transition-ease;
+    }
+}

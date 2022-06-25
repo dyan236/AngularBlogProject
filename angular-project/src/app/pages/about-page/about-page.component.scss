@@ -1,0 +1,65 @@
+@import '../../scss/config';
+
+.about{
+    height: 100vh;
+    overflow: auto;
+    &_header{
+        font-size: 3rem;
+        font-weight: 700;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 2rem;
+    }
+    &_container{
+        border-top: 5px solid $secondary-color;
+        min-height: 80vh;
+        width: 100vw;
+        background-color: rgba($tertiary-color, .8);
+        padding: 2rem 4rem;
+    }
+    &_subheader{
+        color: $secondary-color;
+        font-weight: 700;
+    }
+    &_text{
+        text-align: left;
+        padding-bottom: .5rem;
+        max-width: 42rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &_list{
+        text-align: left;
+        width: fit-content;
+        margin: auto;
+    }
+    &_list-container{
+        display: block;
+        align-items: center;
+    }
+    &_icon{
+        color: $secondary-color;
+    }
+    &_img-container{
+        align-items: center;
+        width: 100%;
+        &_text{
+            font-size: .75rem;
+            color: gray;
+            padding: 1rem;
+            padding-top: 0;
+        }
+    }
+    &_img1{
+        width: 50%;
+        max-width: 21rem;
+    }
+    &_img2{
+        width: 100%;
+        max-width: 42rem;
+    }
+}
+
+@import '../../scss/responsive';

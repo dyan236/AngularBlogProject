@@ -1,0 +1,28 @@
+@import '../../scss/config';
+
+.contact{
+    height: 100%;
+    padding-top: 30vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_header{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+    &_list{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        font-size: 1.25rem;
+    }
+    &_item{
+        color: $secondary-color;
+    }
+    &_text{
+        color: set-text-color($primary-color);
+        padding-top: .5rem;
+    }
+}

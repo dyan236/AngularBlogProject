@@ -1,0 +1,5 @@
+<nav [ngClass]="{open: (showMenu) ? true : false}" class="nav">
+    <ul [ngClass]="{open: (showMenu) ? true : false}" class="menu-nav">
+        <app-nav-item *ngFor="let item of items" [item]="item"></app-nav-item>
+    </ul>
+</nav>

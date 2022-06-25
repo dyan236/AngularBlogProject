@@ -1,0 +1,7 @@
+<div class="posts">
+    <h1 class="posts_header">Posts</h1>
+    <div class="posts_container">
+        <h1 [ngClass]="{hide: (!isEmpty()) ? true : false}" class="posts_none-text">No posts to show...</h1>
+        <app-post *ngFor="let post of posts" [post]="post"></app-post>
+    </div>
+</div>

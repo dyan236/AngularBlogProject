@@ -1,0 +1,5 @@
+<div class="post">
+    <div class="post_header">{{post.date}} - {{post.time}}</div>
+    <p class="post_text">{{post.text}}</p>
+    <img *ngIf="hasImage()" src="{{getImageLink()}}" class="post_image">
+</div>

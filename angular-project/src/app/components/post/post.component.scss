@@ -1,0 +1,28 @@
+@import '../../scss/config';
+
+.post{
+    //width: calc(100vw - 6.5rem);
+    width: 21rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gray;
+    border-radius: .25rem;
+    background-color: darken($color: darkslategray, $amount: 10);
+    &_header{
+        color: gray;
+        text-align: left;
+        padding: .5rem;
+        padding-bottom: .25rem;
+    }
+    &_text{
+        text-align: left;
+        padding: .5rem;
+        padding-top: .25rem;
+    }
+    &_image{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@import '../../scss/responsive';

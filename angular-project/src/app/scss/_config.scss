@@ -1,0 +1,25 @@
+$primary-color: #101010;
+$secondary-color: #FFD700;
+$tertiary-color: #202020;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+@function set-text-color($color){
+    @if (lightness($color) > 40%){
+        @return black;
+    } 
+    @else{
+        @return white;
+    }
+}
+
+@mixin media-desktop{
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
