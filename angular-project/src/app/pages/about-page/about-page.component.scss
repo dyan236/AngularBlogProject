@@ -2,7 +2,8 @@
 
 .about{
     height: 100vh;
-    overflow: auto;
+    overflow: hidden;
+    overflow-y: auto;
     &_header{
         font-size: 3rem;
         font-weight: 700;
